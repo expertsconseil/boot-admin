@@ -1,8 +1,10 @@
 spring:
   application:
     name: boot-admin
+  profiles:
+    active:
+      - dev
   config:
-    import: optional:configserver:http://localhost:8001
-server:
-  port: 8002
+    import: configserver:http://localhost:8001
+
 
