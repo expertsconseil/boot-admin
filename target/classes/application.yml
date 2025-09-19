@@ -3,8 +3,11 @@ spring:
     name: boot-admin
   profiles:
     active:
-      - prod
+      - dev
   config:
     import: configserver:http://localhost:8001
+  cloud:
+    config:
+      profile: dev
 
 
