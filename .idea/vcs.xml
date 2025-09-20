@@ -5,6 +5,7 @@
     <mapping directory="$PROJECT_DIR$/../authentification" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../config-server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../naming-server" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../quiz-generator" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../user" vcs="Git" />
   </component>
