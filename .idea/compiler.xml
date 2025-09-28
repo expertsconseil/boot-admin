@@ -17,19 +17,18 @@
         <module name="api-gateway" />
         <module name="config-server" />
         <module name="boot-admin" />
-        <module name="user" />
-        <module name="authentification" />
+        <module name="user-service" />
+        <module name="authentification-service" />
         <module name="naming-server" />
       </profile>
-      <profile name="Annotation profile for quiz-generator" enabled="true">
+      <profile name="Annotation profile for quiz-generator-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false" useProcessorModulePath="true">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.40/lombok-1.18.40.jar" />
+        <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.40/lombok-1.18.40.jar" />
         </processorPath>
-        <module name="quiz-generator" />
+        <module name="quiz-generator-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="21" />
@@ -37,12 +36,12 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
-      <module name="authentification" options="-parameters" />
+      <module name="authentification-service" options="-parameters" />
       <module name="boot-admin" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="naming-server" options="-parameters" />
-      <module name="quiz-generator" options="-parameters" />
-      <module name="user" options="-parameters" />
+      <module name="quiz-generator-service" options="-parameters" />
+      <module name="user-service" options="-parameters" />
     </option>
   </component>
 </project>
